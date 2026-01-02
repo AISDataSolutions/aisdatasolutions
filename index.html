@@ -1,0 +1,2498 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>AIS - Data Solution</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/ais fav 2-03.png"
+    />
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://thepixelcurve.com/html/sasmix/sasmix/assets/css/plugins/flaticon.css"
+    />
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://thepixelcurve.com/html/sasmix/sasmix/assets/css/plugins/aos.css"
+    />
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/plugins/meanmenu.css" />
+    <link rel="stylesheet" href="assets/css/plugins/splitting.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/plugins/odometer-theme-default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://thepixelcurve.com/html/sasmix/sasmix/assets/css/plugins/magnific-popup.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/lc_styles.css" />
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <style>
+      #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 12px;
+        position: fixed;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        z-index: 9999;
+        font-size: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease, bottom 0.3s ease;
+      }
+
+      #snackbar.show {
+        visibility: visible;
+        opacity: 1;
+        bottom: 50px;
+      }
+
+      #snackbar.success {
+        background-color: #4caf50;
+      }
+
+      #snackbar.error {
+        background-color: #f44336;
+      }
+
+      .hero-bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .hero-video-wrapper {
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        border-radius: 0%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <!-- preloader start -->
+      <div id="loading">
+        <div id="loading-center">
+          <div id="loading-center-absolute">
+            <div class="object" id="object_four"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_one"></div>
+          </div>
+        </div>
+      </div>
+      <!-- preloader end -->
+
+      <!-- Header Start  -->
+      <div id="header" class="section header-section">
+        <div class="header-bottom-section">
+          <div class="container">
+            <!-- Header Wrap Start  -->
+            <div class="header-wrap">
+              <div class="header-logo">
+                <a href="index.html"
+                  ><img src="assets/images/ais_logo.png" alt=""
+                /></a>
+              </div>
+
+              <div class="header-menu d-none d-lg-block">
+                <div class="main-menu">
+                  <nav id="mobile-menu">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="index.html#about">About Us</a></li>
+                      <li><a href="index.html#service">Services</a></li>
+                      <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <!-- Header Meta Start -->
+              <div class="header-meta">
+                <div class="header-btn-wrap d-none d-lg-block">
+                  <a class="btn" href="index.html#contact">Get Started</a>
+                </div>
+
+                <!-- Header Toggle Start -->
+                <div class="side-menu-icon d-lg-none">
+                  <a
+                    href="javascript:void(0)"
+                    class="info-toggle-btn f-right sidebar-toggle-btn"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+                </div>
+                <!-- Header Toggle End -->
+              </div>
+              <!-- Header Meta End  -->
+            </div>
+            <!-- Header Wrap End  -->
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+
+      <!-- sidebar area start -->
+      <div class="sidebar__area">
+        <div class="sidebar__wrapper">
+          <div class="sidebar__close">
+            <button class="sidebar__close-btn" id="sidebar__close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="sidebar__content">
+            <div class="sidebar__logo">
+              <a href="index.html">
+                <img src="assets/images/ais_logo.png" alt="logo" />
+              </a>
+            </div>
+
+            <div class="mobile-menu fix"></div>
+            <div class="sidebar__text d-none d-lg-block">
+              <p>
+                At AIS Data Solutions, we don’t just build systems — we build
+                partnerships for long-term success.
+              </p>
+            </div>
+            <div class="sidebar__contact">
+              <h4>Contact Info</h4>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <div class="sidebar__contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="sidebar__contact-text">
+                    <a
+                      target="_blank"
+                      href="https://maps.app.goo.gl/JBR2tMhCAAH93jcy5"
+                      >Oshawa, Greater Toronto Area, CA</a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="sidebar__contact-icon mr-15">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="sidebar__contact-text">
+                    <a href="tel:+012-345-6789">289-675-8546</a>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="sidebar__contact-icon mr-15">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="sidebar__contact-text">
+                    <a href="mailto:sales@aisdatasolutions.ca"
+                      >sales@aisdatasolutions.ca</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sidebar__social">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61582467209600"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://x.com/AisDataSolution"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/ais-data-solutions/"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar area end -->
+
+      <div class="body-overlay"></div>
+
+      <!-- Hero Start -->
+      <div
+        class="section sasmix-hero-section-04 d-flex align-items-center hero-video-wrapper"
+      >
+        <video class="hero-bg-video" autoplay muted loop playsinline>
+          <source src="assets\videos\45956-447087585.mp4" type="video/mp4" />
+          <!-- Add more formats if needed -->
+        </video>
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <div class="hero-content text-center">
+                <h2 class="title" data-aos-delay="600" data-aos="fade-up">
+                  Technology tailored to your business.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero End -->
+
+      <!-- Features Start -->
+      <div
+        class="section sasmix-features-section-03 sasmix-features-section-06 section-padding-02"
+      >
+        <div class="container">
+          <!-- Features Wrap Start -->
+          <div class="features-wrap">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="section-title-wrap">
+                  <h3 class="sub-title" data-aos-delay="100" data-aos="fade-up">
+                    <img
+                      src="https://thepixelcurve.com/html/sasmix/sasmix/assets/images/sub-img.png"
+                      alt=""
+                    />
+                    Management
+                  </h3>
+                  <div class="section-title2" data-splitting>
+                    <h2 class="title">What You Get with AIS Data Solutions</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feat-text" data-aos-delay="100" data-aos="fade-up">
+                  <p>
+                    We focus on outcomes that make a real difference for your
+                    business. From smoother operations to stronger security, our
+                    solutions help your team work smarter and grow with
+                    confidence.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="features-content-wrap-02"
+              data-aos-delay="100"
+              data-aos="fade-up"
+            >
+              <div class="row g-0">
+                <div class="col-lg-4">
+                  <!-- Features Item Start -->
+                  <div class="features-item-03 bg-color text-center">
+                    <div class="icon-img">
+                      <img src="assets/images/icon/feat-icon1.png" alt="" />
+                    </div>
+                    <div class="feat-content">
+                      <h3 class="title">Faster Operations</h3>
+                      <p>
+                        Automate tasks and streamline workflows to save time.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Features Item End -->
+                </div>
+                <div class="col-lg-4">
+                  <!-- Features Item Start -->
+                  <div class="features-item-03 text-center">
+                    <div class="icon-img">
+                      <img
+                        src="https://thepixelcurve.com/html/sasmix/sasmix/assets/images/icon/feat-icon2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feat-content">
+                      <h3 class="title">Reliable Systems</h3>
+                      <p>Keep IT infrastructure stable and always available.</p>
+                    </div>
+                  </div>
+                  <!-- Features Item End -->
+                </div>
+                <div class="col-lg-4">
+                  <!-- Features Item Start -->
+                  <div class="features-item-03 bg-color text-center">
+                    <div class="icon-img">
+                      <img src="assets/images/icon/feat-icon3.png" alt="" />
+                    </div>
+                    <div class="feat-content">
+                      <h3 class="title">Secure Data</h3>
+                      <p>Protect sensitive information from digital threats.</p>
+                    </div>
+                  </div>
+                  <!-- Features Item End -->
+                </div>
+                <div class="col-lg-4">
+                  <!-- Features Item Start -->
+                  <div class="features-item-03 text-center">
+                    <div class="icon-img">
+                      <img src="assets/images/icon/feat-icon4.png" alt="" />
+                    </div>
+                    <div class="feat-content">
+                      <h3 class="title">Scalable Solutions</h3>
+                      <p>Grow your tech smoothly as your business expands.</p>
+                    </div>
+                  </div>
+                  <!-- Features Item End -->
+                </div>
+                <div class="col-lg-4">
+                  <!-- Features Item Start -->
+                  <div class="features-item-03 bg-color text-center">
+                    <div class="icon-img">
+                      <img src="assets/images/icon/feat-icon1.png" alt="" />
+                    </div>
+                    <div class="feat-content">
+                      <h3 class="title">Better Decisions</h3>
+                      <p>
+                        Access clear insights and organized data for smarter
+                        choices.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Features Item End -->
+                </div>
+                <div class="col-lg-4">
+                  <!-- Features Item Start -->
+                  <div class="features-item-03 text-center">
+                    <div class="icon-img">
+                      <img
+                        src="https://thepixelcurve.com/html/sasmix/sasmix/assets/images/icon/feat-icon8.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feat-content">
+                      <h3 class="title">Ongoing Support</h3>
+                      <p>
+                        Get expert help whenever technology challenges arise.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Features Item End -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Features Wrap End -->
+        </div>
+      </div>
+      <!-- Features End -->
+      <!-- About us Start-->
+      <div
+        class="section bg-wrap"
+        style="background-image: url(assets/images/bg/count-bg.png)"
+        id="about"
+      >
+        <!-- Overview Start -->
+        <div
+          class="section sasmix-overview-section sasmix-overview-section-02 sasmix-overview-section-08 sasmix-overview-section-12 section-padding-5"
+        >
+          <div class="container">
+            <!-- Overview Wrap Start -->
+            <div class="overview-wrap">
+              <div class="flex-container">
+                <div class="section-title-wrap">
+                  <div class="section-title2" data-splitting>
+                    <h2 class="lc_title">About Us</h2>
+                  </div>
+                </div>
+                <div
+                  class="row flex-column-reverse flex-lg-row align-items-center"
+                >
+                  <div class="col-lg-6">
+                    <!-- Overview Image Wrap Start -->
+                    <div class="overview-image-wrap">
+                      <img
+                        class="shape-1 parallaxed"
+                        src="assets/images/shape/video-sh1.png"
+                        alt=""
+                      />
+                      <img
+                        class="shape-2 parallaxed"
+                        src="https://thepixelcurve.com/html/sasmix/sasmix/assets/images/shape/over-sh2.png"
+                        alt=""
+                      />
+                      <div
+                        class="image"
+                        data-aos-delay="100"
+                        data-aos="fade-up"
+                      >
+                        <img src="assets/images/over-7.png" alt="" />
+                      </div>
+                    </div>
+                    <!-- Overview Image Wrap End -->
+                  </div>
+                  <div class="col-lg-6">
+                    <!-- Overview Content Start -->
+                    <div class="overview-content">
+                      <div class="section-title-wrap">
+                        <h3
+                          class="sub-title"
+                          data-aos-delay="100"
+                          data-aos="fade-up"
+                        >
+                          <img
+                            src="https://thepixelcurve.com/html/sasmix/sasmix/assets/images/sub-img.png"
+                            alt=""
+                          />
+                          Who We Are
+                        </h3>
+                        <div class="section-title2" data-splitting>
+                          <h2 class="title">Help your clients save more</h2>
+                        </div>
+                      </div>
+                      <p
+                        data-aos-delay="100"
+                        data-aos="fade-up"
+                        class="centering-text"
+                      >
+                        We provide end-to-end IT solutions designed to meet the
+                        evolving needs of modern businesses. From software
+                        development and cloud services to IT infrastructure,
+                        cybersecurity, and digital transformation, we deliver
+                        reliable and cost-effective solutions that help
+                        organizations operate efficiently and securely.
+                      </p>
+                      <p
+                        data-aos-delay="100"
+                        data-aos="fade-up"
+                        class="centering-text"
+                      >
+                        Our team brings together years of experience, technical
+                        expertise, and a customer-first approach. We focus on
+                        understanding your business goals and turning them into
+                        practical, high-performing technology outcomes.
+                      </p>
+                      <p
+                        data-aos-delay="100"
+                        data-aos="fade-up"
+                        class="centering-text"
+                      >
+                        At AIS Data Solutions, we don’t just build systems — we
+                        build partnerships for long-term success.
+                      </p>
+                    </div>
+                    <!-- Overview Content End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Overview Wrap End -->
+          </div>
+        </div>
+        <!-- Features Start -->
+        <div
+          class="section sasmix-testimonial-section sasmix-testimonial-section-03 section-padding-6"
+        >
+          <div class="container">
+            <div class="single-testimonial-02">
+              <div class="testimonial-content">
+                <div class="qoute">
+                  <h1 style="color: #001f3f">OUR VISION</h1>
+                </div>
+
+                <p style="font-size: 25px">
+                  To be a trusted technology partner delivering complete IT
+                  solutions that empower businesses to innovate, grow, and
+                  succeed in a digital-first world.
+                </p>
+              </div>
+
+              <div class="lc_img_con">
+                <img src="assets/images/vision.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About Us end-->
+      <!-- Overview Start -->
+      <!-- ===================== SERVICES DIAGRAM SECTION (MIDDLE CONTAINER) ===================== -->
+      <div
+        class="section section-padding-5"
+        id="service"
+        style="background: #f8f9ff"
+      >
+        <div class="container">
+          <!-- Heading -->
+          <div class="section-title-wrap">
+            <div class="section-title2 text-center" data-splitting>
+              <h2 class="lc_title">Our Services</h2>
+            </div>
+          </div>
+
+          <!-- Single Image -->
+          <div
+            class="services-diagram-wrap"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            style="text-align: center; margin-top: 30px"
+          >
+            <img
+              src="assets\images\AIS_it.jpg"
+              alt="Our Services Diagram"
+              style="width: 100%; max-width: 950px; border-radius: 15px"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- ================= END OF SERVICES DIAGRAM SECTION ================= -->
+
+      <div
+        class="section sasmix-overview-section sasmix-overview-section-02 sasmix-overview-section-13 section-padding-03"
+        id="service1"
+      >
+        <div class="container">
+          <!-- Overview Wrap Start -->
+          <div class="overview-wrap">
+            <div class="row align-items-center gapping-min">
+              <div class="col-lg-5">
+                <!-- Overview Image Wrap Start -->
+                <div
+                  class="overview-image-wrap"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <div class="image">
+                    <img src="assets/images/im.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Overview Image Wrap End -->
+              </div>
+              <div class="col-lg-7">
+                <!-- Overview Content Start -->
+                <div class="overview-content">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title lc_text_center">
+                        IT Infrastructure Management
+                      </h2>
+                    </div>
+                  </div>
+                  <p
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                    class="centering-text"
+                  >
+                    We provide end-to-end IT infrastructure services to ensure
+                    your business runs smoothly, securely, and without
+                    interruption. Our solutions are designed to strengthen the
+                    core of your technology environment—from datacenters to
+                    networks, communication systems, and storage.
+                  </p>
+                  <div class="overview-list-wrap">
+                    <div class="overview-list-wrap">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div
+                            class="overview-list-item-wrap"
+                            data-aos-delay="100"
+                            data-aos="fade-up"
+                          >
+                            <div class="overview-list-item">
+                              <div class="icon">
+                                <span><i class="fas fa-check"></i></span>
+                              </div>
+                              <div class="content">
+                                <p>Datacenter Management</p>
+                              </div>
+                            </div>
+
+                            <div class="overview-list-item">
+                              <div class="icon">
+                                <span><i class="fas fa-check"></i></span>
+                              </div>
+                              <div class="content">
+                                <p>Network Infrastructure</p>
+                              </div>
+                            </div>
+
+                            <div class="overview-list-item">
+                              <div class="icon">
+                                <span><i class="fas fa-check"></i></span>
+                              </div>
+                              <div class="content">
+                                <p>Compute Solutions</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div
+                            class="overview-list-item-wrap"
+                            data-aos-delay="100"
+                            data-aos="fade-up"
+                          >
+                            <div class="overview-list-item">
+                              <div class="icon">
+                                <span><i class="fas fa-check"></i></span>
+                              </div>
+                              <div class="content">
+                                <p>Backup & Storage</p>
+                              </div>
+                            </div>
+
+                            <div class="overview-list-item">
+                              <div class="icon">
+                                <span><i class="fas fa-check"></i></span>
+                              </div>
+                              <div class="content">
+                                <p>DDI Management – DNS & DHCP</p>
+                              </div>
+                            </div>
+
+                            <div class="overview-list-item">
+                              <div class="icon">
+                                <span><i class="fas fa-check"></i></span>
+                              </div>
+                              <div class="content">
+                                <p>Unified Communications</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Overview Content End -->
+              </div>
+            </div>
+          </div>
+          <!-- Overview Wrap End -->
+        </div>
+      </div>
+
+      <!-- Overview End -->
+
+      <!-- Overview Start -->
+      <div
+        class="section sasmix-overview-section sasmix-overview-section-13 sasmix-overview-section-14 section-padding-03"
+        id="service2"
+      >
+        <div class="container">
+          <!-- Overview Wrap Start -->
+          <div class="overview-wrap">
+            <div
+              class="row flex-column-reverse flex-lg-row align-items-center gapping-min"
+            >
+              <div class="col-lg-7">
+                <!-- Overview Content Start -->
+                <div class="overview-content">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title lc_text_center">Cloud Solutions</h2>
+                    </div>
+                  </div>
+
+                  <p
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                    class="centering-text"
+                  >
+                    We build cloud environments that are scalable, secure, and
+                    tailored to your business needs. Our services help you
+                    design the right cloud architecture, plan your migration
+                    effectively, and combine on-premises and cloud systems into
+                    a unified, flexible solution.
+                  </p>
+
+                  <div class="overview-list-wrap">
+                    <!-- Overview List Item 1 -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="30"
+                          height="36"
+                          viewBox="0 0 30 36"
+                          fill="none"
+                        >
+                          <path
+                            d="M20.4472 28.3813C17.1482 32.8447 15.4987 35.0765 13.9597 34.6048C12.4209 34.1332 12.4209 31.396 12.4209 25.9215L12.421 25.4057C12.421 23.431 12.421 22.4438 11.79 21.8245L11.7567 21.7925C11.1122 21.1863 10.0847 21.1863 8.02961 21.1863C4.33149 21.1863 2.48244 21.1863 1.85752 20.0647C1.84717 20.0462 1.83711 20.0275 1.82734 20.0085C1.23742 18.8697 2.30802 17.4212 4.44924 14.5241L9.55281 7.61905C12.8517 3.15562 14.5012 0.923917 16.0402 1.39552C17.579 1.86713 17.579 4.60432 17.579 10.0787L17.579 10.5949C17.579 12.5693 17.579 13.5566 18.21 14.1758L18.2434 14.2079C18.8879 14.8142 19.9154 14.8142 21.9704 14.8142C25.6685 14.8142 27.5177 14.8142 28.1425 15.9357C28.1529 15.9542 28.1629 15.973 28.1727 15.9918C28.7627 17.1308 27.692 18.5793 25.5507 21.4763"
+                          />
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Cloud Design & Deployment</h3>
+                        <p class="centering-text">
+                          Build and deploy a secure and scalable cloud
+                          architecture tailored to your business.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Overview List Item 2 -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 35 35"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.81835 14.5994L2.88379 17.64L17.88 26.2261L32.1043 17.6399L27.3902 14.762M32.1043 11.8554L17.88 3.18457L3.19252 11.8554L17.88 20.5262L32.1043 11.8554Z"
+                            stroke="#F4257B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.81835 14.5994L2.88379 17.64L17.88 26.2261L32.1043 17.6399L27.3902 14.762M8.02959 20.4756L3.09503 23.5158L18.0911 32.1022L32.3155 23.5158L27.6014 20.638M32.1043 11.8554L17.88 3.18457L3.19252 11.8554L17.88 20.5262L32.1043 11.8554Z"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Migration Advisor & Strategy</h3>
+                        <p class="centering-text">
+                          Plan your cloud adoption with expert guidance, risk
+                          analysis, and a clear migration roadmap.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Overview List Item 3 -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <span><i class="fas fa-cloud"></i></span>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Hybrid Cloud Solutions</h3>
+                        <p class="centering-text">
+                          Seamlessly integrate on-premises systems with cloud
+                          platforms for a unified environment.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Overview Content End -->
+              </div>
+
+              <div class="col-lg-5">
+                <!-- Overview Image Wrap Start -->
+                <div
+                  class="overview-image-wrap"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <div class="image">
+                    <img src="assets/images/cs.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Overview Image Wrap End -->
+              </div>
+            </div>
+          </div>
+          <!-- Overview Wrap End -->
+        </div>
+      </div>
+
+      <!-- Overview End -->
+
+      <!-- Overview Start -->
+      <div
+        class="section sasmix-overview-section sasmix-overview-section-02 sasmix-overview-section-13 section-padding-03"
+        id="service3"
+      >
+        <div class="container mt-50">
+          <!-- Overview Wrap Start -->
+          <div class="overview-wrap">
+            <div class="row align-items-center gapping-min">
+              <div class="col-lg-5">
+                <!-- Overview Image Wrap Start -->
+                <div
+                  class="overview-image-wrap"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <div class="image">
+                    <img src="assets/images/cbs.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Overview Image Wrap End -->
+              </div>
+              <div class="col-lg-7">
+                <!-- Overview Content Start -->
+                <div class="overview-content">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title lc_text_center">Security Solutions</h2>
+                    </div>
+                  </div>
+                  <p
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                    class="centering-text"
+                  >
+                    We provide robust security solutions designed to protect
+                    your digital infrastructure from evolving threats. From
+                    access management to advanced cloud security, our services
+                    ensure your business stays safe, compliant, and resilient.
+                    We help organizations identify vulnerabilities, strengthen
+                    their defenses, and maintain continuous protection through
+                    proactive monitoring, policy enforcement, and
+                    industry-standard security practices.
+                  </p>
+                  <div class="overview-list-wrap">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div
+                          class="overview-list-item-wrap"
+                          data-aos-delay="100"
+                          data-aos="fade-up"
+                        >
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Access Management</p>
+                            </div>
+                          </div>
+
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Firewall</p>
+                            </div>
+                          </div>
+
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Web Proxy</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div
+                          class="overview-list-item-wrap"
+                          data-aos-delay="100"
+                          data-aos="fade-up"
+                        >
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>SASE</p>
+                            </div>
+                          </div>
+
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Audit of IT Assets</p>
+                            </div>
+                          </div>
+
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Governance, Risk & Compliance</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Overview Content End -->
+              </div>
+            </div>
+          </div>
+          <!-- Overview Wrap End -->
+        </div>
+      </div>
+      <!-- Overview End -->
+
+      <div
+        class="section sasmix-overview-section sasmix-overview-section-13 sasmix-overview-section-14 section-padding-04"
+        id="service4"
+      >
+        <div class="container">
+          <!-- Overview Wrap Start -->
+          <div class="overview-wrap">
+            <div
+              class="row flex-column-reverse flex-lg-row align-items-center gapping-min"
+            >
+              <!-- Content Left -->
+              <div class="col-lg-7">
+                <div class="overview-content">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title lc_text_center">
+                        Digital Transformation
+                      </h2>
+                    </div>
+                  </div>
+
+                  <p
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                    class="centering-text"
+                  >
+                    We help businesses move from manual tasks to digital
+                    workflows that make work easier. Our focus is on reducing
+                    repetitive work, improving data flow, and making daily
+                    operations faster and more controlled.
+                  </p>
+
+                  <div class="overview-list-wrap">
+                    <!-- Item 1 -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="30"
+                          height="36"
+                          viewBox="0 0 30 36"
+                          fill="none"
+                        >
+                          <path
+                            d="M20.4472 28.3813C17.1482 32.8447 15.4987 35.0765 13.9597 34.6048C12.4209 34.1332 12.4209 31.396 12.4209 25.9215L12.421 25.4057C12.421 23.431 12.421 22.4438 11.79 21.8245L11.7567 21.7925C11.1122 21.1863 10.0847 21.1863 8.02961 21.1863C4.33149 21.1863 2.48244 21.1863 1.85752 20.0647C1.84717 20.0462 1.83711 20.0275 1.82734 20.0085C1.23742 18.8697 2.30802 17.4212 4.44924 14.5241L9.55281 7.61905C12.8517 3.15562 14.5012 0.923917 16.0402 1.39552C17.579 1.86713 17.579 4.60432 17.579 10.0787L17.579 10.5949C17.579 12.5693 17.579 13.5566 18.21 14.1758L18.2434 14.2079C18.8879 14.8142 19.9154 14.8142 21.9704 14.8142C25.6685 14.8142 27.5177 14.8142 28.1425 15.9357C28.1529 15.9542 28.1629 15.973 28.1727 15.9918C28.7627 17.1308 27.692 18.5793 25.5507 21.4763"
+                          />
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Process Automation</h3>
+                        <p>
+                          Simplify repetitive tasks and save time with automated
+                          workflows.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 35 35"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.81835 14.5994L2.88379 17.64L17.88 26.2261L32.1043 17.6399L27.3902 14.762M32.1043 11.8554L17.88 3.18457L3.19252 11.8554L17.88 20.5262L32.1043 11.8554Z"
+                            stroke="#F4257B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.81835 14.5994L2.88379 17.64L17.88 26.2261L32.1043 17.6399L27.3902 14.762M8.02959 20.4756L3.09503 23.5158L18.0911 32.1022L32.3155 23.5158L27.6014 20.638"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Digital Adoption</h3>
+                        <p>
+                          Enable your team to effectively use new tools and
+                          digital workflows.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 35 35"
+                          fill="none"
+                        >
+                          <path
+                            d="M17.5 3L3 12L17.5 21L32 12L17.5 3Z"
+                            stroke="#F4257B"
+                            stroke-width="2"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Data Centralization</h3>
+                        <p>
+                          Bring all your business data into one unified,
+                          accessible place.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Image Right -->
+              <div class="col-lg-5">
+                <div
+                  class="overview-image-wrap"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <div class="image">
+                    <img src="assets/images/dt.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Overview Wrap End -->
+        </div>
+      </div>
+
+      <!-- Overview Start -->
+      <div
+        class="section sasmix-overview-section sasmix-overview-section-02 sasmix-overview-section-13 section-padding-03"
+        id="service5"
+      >
+        <div class="container mt-50">
+          <!-- Overview Wrap Start -->
+          <div class="overview-wrap">
+            <div class="row align-items-center gapping-min">
+              <div class="col-lg-5">
+                <!-- Overview Image Wrap Start -->
+                <div
+                  class="overview-image-wrap"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <div class="image">
+                    <img src="assets/images/sd.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Overview Image Wrap End -->
+              </div>
+              <div class="col-lg-7">
+                <!-- Overview Content Start -->
+                <div class="overview-content">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title lc_text_center">
+                        Application Development
+                      </h2>
+                    </div>
+                  </div>
+                  <p
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                    class="centering-text"
+                  >
+                    We build high-performance applications that are intuitive,
+                    scalable, and aligned with your business needs. Whether it’s
+                    a web app, mobile app, or a custom API, we develop solutions
+                    that integrate seamlessly, perform reliably, and deliver a
+                    smooth user experience. Our goal is to turn your ideas into
+                    powerful applications that enhance productivity and
+                    accelerate growth.
+                  </p>
+                  <div class="overview-list-wrap">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div
+                          class="overview-list-item-wrap"
+                          data-aos-delay="100"
+                          data-aos="fade-up"
+                        >
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Web applications</p>
+                            </div>
+                          </div>
+
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Mobile applications</p>
+                            </div>
+                          </div>
+
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>API development</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div
+                          class="overview-list-item-wrap"
+                          data-aos-delay="100"
+                          data-aos="fade-up"
+                        >
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>UI/UX design</p>
+                            </div>
+                          </div>
+
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Quality assurance testing</p>
+                            </div>
+                          </div>
+
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Ongoing maintenance and support</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Overview Content End -->
+              </div>
+            </div>
+          </div>
+          <!-- Overview Wrap End -->
+        </div>
+      </div>
+
+      <!-- Overview End -->
+      <!-- Overview Start -->
+      <div
+        class="section sasmix-overview-section sasmix-overview-section-13 sasmix-overview-section-14 section-padding-04"
+        id="service6"
+      >
+        <div class="container">
+          <!-- Overview Wrap Start -->
+          <div class="overview-wrap">
+            <div
+              class="row flex-column-reverse flex-lg-row align-items-center gapping-min"
+            >
+              <div class="col-lg-7">
+                <!-- Overview Content Start -->
+                <div class="overview-content">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title lc_text_center">Digital Marketing</h2>
+                    </div>
+                  </div>
+                  <p
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                    class="centering-text"
+                  >
+                    We help brands reach the right audience with content that
+                    feels relevant. Our approach is simple and practical. No big
+                    claims or fancy terms, just clear strategy and consistent
+                    execution that ensures your message lands where it matters.
+                  </p>
+                  <div class="overview-list-wrap">
+                    <!-- Overview List Item Start -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="30"
+                          height="36"
+                          viewBox="0 0 30 36"
+                          fill="none"
+                        >
+                          <path
+                            d="M20.4472 28.3813C17.1482 32.8447 15.4987 35.0765 13.9597 34.6048C12.4209 34.1332 12.4209 31.396 12.4209 25.9215L12.421 25.4057C12.421 23.431 12.421 22.4438 11.79 21.8245L11.7567 21.7925C11.1122 21.1863 10.0847 21.1863 8.02961 21.1863C4.33149 21.1863 2.48244 21.1863 1.85752 20.0647C1.84717 20.0462 1.83711 20.0275 1.82734 20.0085C1.23742 18.8697 2.30802 17.4212 4.44924 14.5241L9.55281 7.61905C12.8517 3.15562 14.5012 0.923917 16.0402 1.39552C17.579 1.86713 17.579 4.60432 17.579 10.0787L17.579 10.5949C17.579 12.5693 17.579 13.5566 18.21 14.1758L18.2434 14.2079C18.8879 14.8142 19.9154 14.8142 21.9704 14.8142C25.6685 14.8142 27.5177 14.8142 28.1425 15.9357C28.1529 15.9542 28.1629 15.973 28.1727 15.9918C28.7627 17.1308 27.692 18.5793 25.5507 21.4763"
+                          />
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Social Media Strategy</h3>
+                        <p>
+                          Build and position your presence on the platforms that
+                          matter most.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Overview List Item End -->
+                    <!-- Overview List Item Start -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 35 35"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.81835 14.5994L2.88379 17.64L17.88 26.2261L32.1043 17.6399L27.3902 14.762M32.1043 11.8554L17.88 3.18457L3.19252 11.8554L17.88 20.5262L32.1043 11.8554Z"
+                            stroke="#F4257B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.81835 14.5994L2.88379 17.64L17.88 26.2261L32.1043 17.6399L27.3902 14.762M8.02959 20.4756L3.09503 23.5158L18.0911 32.1022L32.3155 23.5158L27.6014 20.638M32.1043 11.8554L17.88 3.18457L3.19252 11.8554L17.88 20.5262L32.1043 11.8554Z"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Performance Campaigns</h3>
+                        <p>
+                          Run targeted ads to reach people who are already
+                          interested in your products or services.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Overview List Item End -->
+                  </div>
+                </div>
+                <!-- Overview Content End -->
+              </div>
+              <div class="col-lg-5">
+                <!-- Overview Image Wrap Start -->
+                <div
+                  class="overview-image-wrap"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <div class="image">
+                    <img src="assets/images/dm.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Overview Image Wrap End -->
+              </div>
+            </div>
+          </div>
+          <!-- Overview Wrap End -->
+        </div>
+      </div>
+      <!-- Overview End -->
+      <!-- Overview Start -->
+      <div
+        class="section sasmix-overview-section sasmix-overview-section-02 sasmix-overview-section-13 section-padding-03"
+        id="service7"
+      >
+        <div class="container">
+          <!-- Overview Wrap Start -->
+          <div class="overview-wrap">
+            <div class="row align-items-center gapping-min">
+              <div class="col-lg-5">
+                <!-- Overview Image Wrap Start -->
+                <div
+                  class="overview-image-wrap"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <div class="image">
+                    <img src="assets/images/wa.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Overview Image Wrap End -->
+              </div>
+              <div class="col-lg-7">
+                <!-- Overview Content Start -->
+                <div class="overview-content">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title lc_text_center">Workflow Automation</h2>
+                    </div>
+                  </div>
+                  <p
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                    class="centering-text"
+                  >
+                    We help businesses make everyday tasks faster and more
+                    consistent. Our focus is on reducing repetitive work and
+                    keeping processes running smoothly. This allows your team to
+                    focus on what truly matters instead of getting stuck in
+                    routine tasks.
+                  </p>
+                  <div class="overview-list-wrap">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div
+                          class="overview-list-item-wrap"
+                          data-aos-delay="100"
+                          data-aos="fade-up"
+                        >
+                          <!-- Overview List Item Start -->
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Task Automation</p>
+                            </div>
+                          </div>
+                          <!-- Overview List Item End -->
+                          <!-- Overview List Item Start -->
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Process Mapping</p>
+                            </div>
+                          </div>
+                          <!-- Overview List Item End -->
+                          <!-- Overview List Item Start -->
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Data Integration</p>
+                            </div>
+                          </div>
+                          <!-- Overview List Item End -->
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div
+                          class="overview-list-item-wrap"
+                          data-aos-delay="100"
+                          data-aos="fade-up"
+                        >
+                          <!-- Overview List Item Start -->
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Notification Setup</p>
+                            </div>
+                          </div>
+                          <!-- Overview List Item End -->
+                          <!-- Overview List Item Start -->
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Approval Workflows</p>
+                            </div>
+                          </div>
+                          <!-- Overview List Item End -->
+                          <!-- Overview List Item Start -->
+                          <div class="overview-list-item">
+                            <div class="icon">
+                              <span><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="content">
+                              <p>Reporting Dashboards</p>
+                            </div>
+                          </div>
+                          <!-- Overview List Item End -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Overview Content End -->
+              </div>
+            </div>
+          </div>
+          <!-- Overview Wrap End -->
+        </div>
+      </div>
+      <!-- Overview End -->
+
+      <!-- Overview Start -->
+      <div
+        class="section sasmix-overview-section sasmix-overview-section-13 sasmix-overview-section-14 section-padding-03"
+        id="service8"
+      >
+        <div class="container">
+          <!-- Overview Wrap Start -->
+          <div class="overview-wrap">
+            <div
+              class="row flex-column-reverse flex-lg-row align-items-center gapping-min"
+            >
+              <div class="col-lg-7">
+                <!-- Overview Content Start -->
+                <div class="overview-content">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title lc_text_center">
+                        IT Consulting & Solutions Partner
+                      </h2>
+                    </div>
+                  </div>
+                  <p
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                    class="centering-text"
+                  >
+                    We deliver complete end-to-end technology solutions tailored
+                    to your business needs. Whether you want us to manage an
+                    entire project or work alongside your internal team, our
+                    approach ensures reliable delivery, clear communication, and
+                    long-term scalability.
+                  </p>
+
+                  <div class="overview-list-wrap">
+                    <!-- Overview List Item Start -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="30"
+                          height="36"
+                          viewBox="0 0 30 36"
+                          fill="none"
+                        >
+                          <path
+                            d="M20.4472 28.3813C17.1482 32.8447 15.4987 35.0765 13.9597 34.6048C12.4209 34.1332 12.4209 31.396 12.4209 25.9215L12.421 25.4057C12.421 23.431 12.421 22.4438 11.79 21.8245L11.7567 21.7925C11.1122 21.1863 10.0847 21.1863 8.02961 21.1863C4.33149 21.1863 2.48244 21.1863 1.85752 20.0647C1.84717 20.0462 1.83711 20.0275 1.82734 20.0085C1.23742 18.8697 2.30802 17.4212 4.44924 14.5241L9.55281 7.61905C12.8517 3.15562 14.5012 0.923917 16.0402 1.39552C17.579 1.86713 17.579 4.60432 17.579 10.0787L17.579 10.5949C17.579 12.5693 17.579 13.5566 18.21 14.1758L18.2434 14.2079C18.8879 14.8142 19.9154 14.8142 21.9704 14.8142C25.6685 14.8142 27.5177 14.8142 28.1425 15.9357C28.1529 15.9542 28.1629 15.973 28.1727 15.9918C28.7627 17.1308 27.692 18.5793 25.5507 21.4763"
+                          />
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Turnkey Projects</h3>
+                        <p>
+                          We handle everything end-to-end — planning,
+                          development, deployment, and support — delivering
+                          fully ready solutions.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Overview List Item End -->
+
+                    <!-- Overview List Item Start -->
+                    <div
+                      class="overview-list-item"
+                      data-aos-delay="100"
+                      data-aos="fade-up"
+                    >
+                      <div class="icon">
+                        <svg
+                          width="35"
+                          height="35"
+                          viewBox="0 0 35 35"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.81835 14.5994L2.88379 17.64L17.88 26.2261L32.1043 17.6399L27.3902 14.762M32.1043 11.8554L17.88 3.18457L3.19252 11.8554L17.88 20.5262L32.1043 11.8554Z"
+                            stroke="#F4257B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.81835 14.5994L2.88379 17.64L17.88 26.2261L32.1043 17.6399L27.3902 14.762M8.02959 20.4756L3.09503 23.5158L18.0911 32.1022L32.3155 23.5158L27.6014 20.638M32.1043 11.8554L17.88 3.18457L3.19252 11.8554L17.88 20.5262L32.1043 11.8554Z"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Hybrid Model Delivery</h3>
+                        <p>
+                          A flexible model where our team works alongside your
+                          internal staff to accelerate development and share
+                          responsibility.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Overview List Item End -->
+                  </div>
+                </div>
+                <!-- Overview Content End -->
+              </div>
+
+              <div class="col-lg-5">
+                <!-- Overview Image Wrap Start -->
+                <div
+                  class="overview-image-wrap"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <div class="image">
+                    <img src="assets/images/ics.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Overview Image Wrap End -->
+              </div>
+            </div>
+          </div>
+          <!-- Overview Wrap End -->
+        </div>
+      </div>
+
+      <!-- Overview End -->
+      <!-- Counter End -->
+
+      <!-- Testimonial Start -->
+      <div
+        class="section sasmix-testimonial-section sasmix-testimonial-section-04 section-padding-02"
+      >
+        <div class="testimonial-bg-wrap">
+          <div class="container">
+            <div class="section-title-wrap">
+              <div class="section-title2 text-center" data-splitting>
+                <h2 class="title">
+                  <img src="assets/images/icon/testi-icon.png" alt="" /> 400k+
+                </h2>
+                <p>Happy Users & Customers</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial Wrap Start -->
+          <div class="testimonial-wrap">
+            <!-- Testimonial Slider Wrap Start -->
+            <div class="testimonial-slider-wrap">
+              <div class="swiper-container testimonial-active">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <!-- Single Testimonial Start -->
+                    <div class="single-testimonial height-test">
+                      <div class="shape-1">
+                        <svg
+                          width="187"
+                          height="192"
+                          viewBox="0 0 187 192"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M94.5 100.713C91.935 150.916 50.703 190.909 0 191.493V0C50.703 0.5845 91.935 40.5767 94.5 90.78C97.031 41.2385 137.217 1.6407 187 0.0438004V191.45C137.217 189.853 97.031 150.255 94.5 100.713Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="author-img">
+                        <img src="assets/images/a1.jpg" alt="" />
+                      </div>
+                      <div class="testimonial-content">
+                        <div class="qoute">
+                          <svg
+                            width="46"
+                            height="46"
+                            viewBox="0 0 46 46"
+                            fill="none"
+                          >
+                            <g>
+                              <path
+                                d="M20.1251 6.67796C20.6544 6.67796 21.0835 6.24886 21.0835 5.71959C21.0835 5.19032 20.6544 4.76123 20.1251 4.76123C9.01565 4.7739 0.0127728 13.7768 0.000104799 24.8862V30.6362C-0.0165163 36.4752 4.70333 41.2221 10.5422 41.2387C16.3811 41.2553 21.128 36.5355 21.1446 30.6966C21.1613 24.8577 16.4414 20.1108 10.6026 20.0941C7.1549 20.0844 3.91891 21.7562 1.9321 24.5738C2.10955 14.649 10.1985 6.69206 20.1251 6.67796Z"
+                                fill="#001F3F"
+                              />
+                              <path
+                                d="M35.4584 20.0946C32.0305 20.0973 28.8185 21.7684 26.8487 24.5738C27.0263 14.6489 35.1153 6.69197 45.0417 6.67796C45.571 6.67796 46.0001 6.24886 46.0001 5.71959C46.0001 5.19032 45.571 4.76123 45.0417 4.76123C33.9323 4.7739 24.9294 13.7768 24.9167 24.8862V30.6362C24.9167 36.4582 29.6364 41.1779 35.4584 41.1779C41.2803 41.1779 46 36.4582 46 30.6362C46 24.8143 41.2804 20.0946 35.4584 20.0946Z"
+                                fill="#001F3F"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath>
+                                <rect width="46" height="46" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="centering-text">
+                          AIS Data Solutions made our cloud migration completely
+                          stress-free.
+                        </p>
+                        <h3 class="name-info">
+                          Ramesh K <span>/ Operations Manager</span>
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- Single Testimonial End -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Single Testimonial Start -->
+                    <div class="single-testimonial height-test">
+                      <div class="shape-1">
+                        <svg
+                          width="187"
+                          height="192"
+                          viewBox="0 0 187 192"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M94.5 100.713C91.935 150.916 50.703 190.909 0 191.493V0C50.703 0.5845 91.935 40.5767 94.5 90.78C97.031 41.2385 137.217 1.6407 187 0.0438004V191.45C137.217 189.853 97.031 150.255 94.5 100.713Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="author-img">
+                        <img src="assets/images/a1.jpg" alt="" />
+                      </div>
+                      <div class="testimonial-content">
+                        <div class="qoute">
+                          <svg
+                            width="46"
+                            height="46"
+                            viewBox="0 0 46 46"
+                            fill="none"
+                          >
+                            <g>
+                              <path
+                                d="M20.1251 6.67796C20.6544 6.67796 21.0835 6.24886 21.0835 5.71959C21.0835 5.19032 20.6544 4.76123 20.1251 4.76123C9.01565 4.7739 0.0127728 13.7768 0.000104799 24.8862V30.6362C-0.0165163 36.4752 4.70333 41.2221 10.5422 41.2387C16.3811 41.2553 21.128 36.5355 21.1446 30.6966C21.1613 24.8577 16.4414 20.1108 10.6026 20.0941C7.1549 20.0844 3.91891 21.7562 1.9321 24.5738C2.10955 14.649 10.1985 6.69206 20.1251 6.67796Z"
+                                fill="#001F3F"
+                              />
+                              <path
+                                d="M35.4584 20.0946C32.0305 20.0973 28.8185 21.7684 26.8487 24.5738C27.0263 14.6489 35.1153 6.69197 45.0417 6.67796C45.571 6.67796 46.0001 6.24886 46.0001 5.71959C46.0001 5.19032 45.571 4.76123 45.0417 4.76123C33.9323 4.7739 24.9294 13.7768 24.9167 24.8862V30.6362C24.9167 36.4582 29.6364 41.1779 35.4584 41.1779C41.2803 41.1779 46 36.4582 46 30.6362C46 24.8143 41.2804 20.0946 35.4584 20.0946Z"
+                                fill="#001F3F"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath>
+                                <rect width="46" height="46" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="centering-text">
+                          They really understood our workflow and built software
+                          that fits perfectly with what we do.
+                        </p>
+                        <h3 class="name-info">
+                          Priya S <span>/ Product Head</span>
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- Single Testimonial End -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Single Testimonial Start -->
+                    <div class="single-testimonial height-test">
+                      <div class="shape-1">
+                        <svg
+                          width="187"
+                          height="192"
+                          viewBox="0 0 187 192"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M94.5 100.713C91.935 150.916 50.703 190.909 0 191.493V0C50.703 0.5845 91.935 40.5767 94.5 90.78C97.031 41.2385 137.217 1.6407 187 0.0438004V191.45C137.217 189.853 97.031 150.255 94.5 100.713Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="author-img">
+                        <img src="assets/images/a1.jpg" alt="" />
+                      </div>
+                      <div class="testimonial-content">
+                        <div class="qoute">
+                          <svg
+                            width="46"
+                            height="46"
+                            viewBox="0 0 46 46"
+                            fill="none"
+                          >
+                            <g>
+                              <path
+                                d="M20.1251 6.67796C20.6544 6.67796 21.0835 6.24886 21.0835 5.71959C21.0835 5.19032 20.6544 4.76123 20.1251 4.76123C9.01565 4.7739 0.0127728 13.7768 0.000104799 24.8862V30.6362C-0.0165163 36.4752 4.70333 41.2221 10.5422 41.2387C16.3811 41.2553 21.128 36.5355 21.1446 30.6966C21.1613 24.8577 16.4414 20.1108 10.6026 20.0941C7.1549 20.0844 3.91891 21.7562 1.9321 24.5738C2.10955 14.649 10.1985 6.69206 20.1251 6.67796Z"
+                                fill="#001F3F"
+                              />
+                              <path
+                                d="M35.4584 20.0946C32.0305 20.0973 28.8185 21.7684 26.8487 24.5738C27.0263 14.6489 35.1153 6.69197 45.0417 6.67796C45.571 6.67796 46.0001 6.24886 46.0001 5.71959C46.0001 5.19032 45.571 4.76123 45.0417 4.76123C33.9323 4.7739 24.9294 13.7768 24.9167 24.8862V30.6362C24.9167 36.4582 29.6364 41.1779 35.4584 41.1779C41.2803 41.1779 46 36.4582 46 30.6362C46 24.8143 41.2804 20.0946 35.4584 20.0946Z"
+                                fill="#001F3F"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath>
+                                <rect width="46" height="46" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="centering-text">
+                          Whenever our IT systems had issues, their team was
+                          quick and reliable in fixing them.
+                        </p>
+                        <h3 class="name-info">Anil M <span>/ CEO</span></h3>
+                      </div>
+                    </div>
+                    <!-- Single Testimonial End -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Single Testimonial Start -->
+                    <div class="single-testimonial height-test">
+                      <div class="shape-1">
+                        <svg
+                          width="187"
+                          height="192"
+                          viewBox="0 0 187 192"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M94.5 100.713C91.935 150.916 50.703 190.909 0 191.493V0C50.703 0.5845 91.935 40.5767 94.5 90.78C97.031 41.2385 137.217 1.6407 187 0.0438004V191.45C137.217 189.853 97.031 150.255 94.5 100.713Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="author-img">
+                        <img src="assets/images/a1.jpg" alt="" />
+                      </div>
+                      <div class="testimonial-content">
+                        <div class="qoute">
+                          <svg
+                            width="46"
+                            height="46"
+                            viewBox="0 0 46 46"
+                            fill="none"
+                          >
+                            <g>
+                              <path
+                                d="M20.1251 6.67796C20.6544 6.67796 21.0835 6.24886 21.0835 5.71959C21.0835 5.19032 20.6544 4.76123 20.1251 4.76123C9.01565 4.7739 0.0127728 13.7768 0.000104799 24.8862V30.6362C-0.0165163 36.4752 4.70333 41.2221 10.5422 41.2387C16.3811 41.2553 21.128 36.5355 21.1446 30.6966C21.1613 24.8577 16.4414 20.1108 10.6026 20.0941C7.1549 20.0844 3.91891 21.7562 1.9321 24.5738C2.10955 14.649 10.1985 6.69206 20.1251 6.67796Z"
+                                fill="#001F3F"
+                              />
+                              <path
+                                d="M35.4584 20.0946C32.0305 20.0973 28.8185 21.7684 26.8487 24.5738C27.0263 14.6489 35.1153 6.69197 45.0417 6.67796C45.571 6.67796 46.0001 6.24886 46.0001 5.71959C46.0001 5.19032 45.571 4.76123 45.0417 4.76123C33.9323 4.7739 24.9294 13.7768 24.9167 24.8862V30.6362C24.9167 36.4582 29.6364 41.1779 35.4584 41.1779C41.2803 41.1779 46 36.4582 46 30.6362C46 24.8143 41.2804 20.0946 35.4584 20.0946Z"
+                                fill="#001F3F"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath>
+                                <rect width="46" height="46" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="centering-text">
+                          They helped automate our routine tasks, and we’re
+                          saving hours every week now
+                        </p>
+                        <h3 class="name-info">
+                          Sneha R. <span>/ Business Analyst</span>
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- Single Testimonial End -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Single Testimonial Start -->
+                    <div class="single-testimonial height-test">
+                      <div class="shape-1">
+                        <svg
+                          width="187"
+                          height="192"
+                          viewBox="0 0 187 192"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M94.5 100.713C91.935 150.916 50.703 190.909 0 191.493V0C50.703 0.5845 91.935 40.5767 94.5 90.78C97.031 41.2385 137.217 1.6407 187 0.0438004V191.45C137.217 189.853 97.031 150.255 94.5 100.713Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="author-img">
+                        <img src="assets/images/a1.jpg" alt="" />
+                      </div>
+                      <div class="testimonial-content">
+                        <div class="qoute">
+                          <svg
+                            width="46"
+                            height="46"
+                            viewBox="0 0 46 46"
+                            fill="none"
+                          >
+                            <g>
+                              <path
+                                d="M20.1251 6.67796C20.6544 6.67796 21.0835 6.24886 21.0835 5.71959C21.0835 5.19032 20.6544 4.76123 20.1251 4.76123C9.01565 4.7739 0.0127728 13.7768 0.000104799 24.8862V30.6362C-0.0165163 36.4752 4.70333 41.2221 10.5422 41.2387C16.3811 41.2553 21.128 36.5355 21.1446 30.6966C21.1613 24.8577 16.4414 20.1108 10.6026 20.0941C7.1549 20.0844 3.91891 21.7562 1.9321 24.5738C2.10955 14.649 10.1985 6.69206 20.1251 6.67796Z"
+                                fill="#001F3F"
+                              />
+                              <path
+                                d="M35.4584 20.0946C32.0305 20.0973 28.8185 21.7684 26.8487 24.5738C27.0263 14.6489 35.1153 6.69197 45.0417 6.67796C45.571 6.67796 46.0001 6.24886 46.0001 5.71959C46.0001 5.19032 45.571 4.76123 45.0417 4.76123C33.9323 4.7739 24.9294 13.7768 24.9167 24.8862V30.6362C24.9167 36.4582 29.6364 41.1779 35.4584 41.1779C41.2803 41.1779 46 36.4582 46 30.6362C46 24.8143 41.2804 20.0946 35.4584 20.0946Z"
+                                fill="#001F3F"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath>
+                                <rect width="46" height="46" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="centering-text">
+                          The cybersecurity setup they provided actually gives
+                          us peace of mind about our data.
+                        </p>
+                        <h3 class="name-info">
+                          Karthik P <span>/ IT Lead</span>
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- Single Testimonial End -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Single Testimonial Start -->
+                    <div class="single-testimonial height-test">
+                      <div class="shape-1">
+                        <svg
+                          width="187"
+                          height="192"
+                          viewBox="0 0 187 192"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M94.5 100.713C91.935 150.916 50.703 190.909 0 191.493V0C50.703 0.5845 91.935 40.5767 94.5 90.78C97.031 41.2385 137.217 1.6407 187 0.0438004V191.45C137.217 189.853 97.031 150.255 94.5 100.713Z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="author-img">
+                        <img src="assets/images/a1.jpg" alt="" />
+                      </div>
+                      <div class="testimonial-content">
+                        <div class="qoute">
+                          <svg
+                            width="46"
+                            height="46"
+                            viewBox="0 0 46 46"
+                            fill="none"
+                          >
+                            <g>
+                              <path
+                                d="M20.1251 6.67796C20.6544 6.67796 21.0835 6.24886 21.0835 5.71959C21.0835 5.19032 20.6544 4.76123 20.1251 4.76123C9.01565 4.7739 0.0127728 13.7768 0.000104799 24.8862V30.6362C-0.0165163 36.4752 4.70333 41.2221 10.5422 41.2387C16.3811 41.2553 21.128 36.5355 21.1446 30.6966C21.1613 24.8577 16.4414 20.1108 10.6026 20.0941C7.1549 20.0844 3.91891 21.7562 1.9321 24.5738C2.10955 14.649 10.1985 6.69206 20.1251 6.67796Z"
+                                fill="#001F3F"
+                              />
+                              <path
+                                d="M35.4584 20.0946C32.0305 20.0973 28.8185 21.7684 26.8487 24.5738C27.0263 14.6489 35.1153 6.69197 45.0417 6.67796C45.571 6.67796 46.0001 6.24886 46.0001 5.71959C46.0001 5.19032 45.571 4.76123 45.0417 4.76123C33.9323 4.7739 24.9294 13.7768 24.9167 24.8862V30.6362C24.9167 36.4582 29.6364 41.1779 35.4584 41.1779C41.2803 41.1779 46 36.4582 46 30.6362C46 24.8143 41.2804 20.0946 35.4584 20.0946Z"
+                                fill="#001F3F"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath>
+                                <rect width="46" height="46" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="centering-text">
+                          Thanks to their guidance, our digital marketing
+                          campaigns are finally showing consistent results
+                        </p>
+                        <h3 class="name-info">
+                          Meera L <span>/ Marketing Manager</span>
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- Single Testimonial End -->
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <!-- Testimonial Slider Wrap End -->
+          </div>
+          <!-- Testimonial Wrap End -->
+        </div>
+      </div>
+      <!-- Testimonial End -->
+
+      <!-- Contact Start -->
+      <div class="section contact-section section-padding-02" id="contact">
+        <div class="container">
+          <div class="section-title-wrap">
+            <div class="section-title2 text-center" data-splitting>
+              <h2 class="lc_title">Contact</h2>
+              <br />
+            </div>
+          </div>
+          <div class="contact-wrap">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="contact-info-wrap">
+                  <div class="section-title-wrap">
+                    <div class="section-title2" data-splitting>
+                      <h2 class="title">
+                        We are waiting <br />
+                        for your response
+                      </h2>
+                    </div>
+                  </div>
+                  <!--Single Contact Info Start -->
+                  <div
+                    class="single-contact-info"
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                  >
+                    <div class="info-icon">
+                      <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                      <h4 class="title">Phone</h4>
+                      <p><a href="tel:+012-345-6789">289-675-8546</a></p>
+                    </div>
+                  </div>
+                  <!--Single Contact Info End -->
+                  <!--Single Contact Info Start -->
+                  <div
+                    class="single-contact-info"
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                  >
+                    <div class="info-icon">
+                      <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="info-content">
+                      <h4 class="title">Email Address</h4>
+                      <p>
+                        <a href="mailto:sales@aisdatasolutions.ca"
+                          >sales@aisdatasolutions.ca</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!--Single Contact Info End -->
+                  <!--Single Contact Info Start -->
+                  <div
+                    class="single-contact-info"
+                    data-aos-delay="100"
+                    data-aos="fade-up"
+                  >
+                    <div class="info-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                      <h4 class="title">Our Address</h4>
+                      <p>
+                        <a
+                          target="_blank"
+                          href="https://maps.app.goo.gl/JBR2tMhCAAH93jcy5"
+                          >Oshawa, Greater Toronto Area, CA</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!--Single Contact Info End -->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <!-- contact Form Start -->
+                <div
+                  class="contact-form"
+                  data-aos-delay="100"
+                  data-aos="fade-up"
+                >
+                  <!-- contact Form Wrap Start -->
+                  <div class="contact-form-wrap">
+                    <form id="contactForm" action="form.php" method="POST">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="single-form">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="name"
+                              name="name"
+                              placeholder="Your Name"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="single-form">
+                            <input
+                              class="form-control"
+                              type="email"
+                              id="email"
+                              name="email"
+                              placeholder="Your Email"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="single-form">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="phone"
+                              name="phone"
+                              placeholder="Phone Number"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Single DateTime Picker -->
+                        <div class="col-md-12">
+                          <div class="single-form">
+                            <input
+                              class="form-control"
+                              type="datetime-local"
+                              id="preferred_datetime"
+                              name="preferred_datetime"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <input
+                          type="hidden"
+                          id="user_timezone"
+                          name="user_timezone"
+                        />
+
+                        <div class="col-md-12">
+                          <div class="single-form">
+                            <textarea
+                              class="form-control"
+                              id="message"
+                              name="message"
+                              placeholder="Your Message"
+                              required
+                            ></textarea>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="form-btn">
+                            <button class="btn" id="submitBtn" type="submit">
+                              Send Message
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- Snackbar message -->
+                    <div id="snackbar"></div>
+                  </div>
+                  <div id="snackbar"></div>
+                  <!-- contact Form Wrap End -->
+                </div>
+                <!-- contact Form End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact End -->
+
+      <!-- Contact Map Start -->
+      <div class="section contact-map-section section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="contact-map-wrap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229449.95972422496!2d-79.06717819937575!3d43.93468956708568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51d21ccd37533%3A0xdd8ceff2f844fcbf!2sOshawa%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1762234747979!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Map End -->
+      <!-- Footer Section Start -->
+      <div class="section footer-section">
+        <div class="container">
+          <!-- Footer Widget Wrap Start -->
+          <div class="footer-widget-wrap">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <!-- Footer Widget Start -->
+                <div class="footer-widget-about centering-footer">
+                  <a class="footer-logo" href="index.html"
+                    ><img src="assets/images/ais_logo_white.png" alt="Logo"
+                  /></a>
+                  <p>
+                    At AIS Data Solutions, we don’t just build systems — we
+                    build partnerships for long-term success.
+                  </p>
+                  <div class="footer-social">
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=61582467209600"
+                          target="_blank"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://x.com/AisDataSolution" target="_blank"
+                          ><i class="fa-brands fa-x-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/company/ais-data-solutions/"
+                          target="_blank"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Footer Widget End -->
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- Footer Widget Start -->
+                <div class="footer-widget footer-widget-2">
+                  <h4 class="footer-widget-title text-center">Our Services</h4>
+                  <div class="two-service" style="gap: 5px">
+                    <div class="widget-link">
+                      <ul class="link">
+                        <li>
+                          <a href="index.html#service1"
+                            >IT Infrastructure Management</a
+                          >
+                        </li>
+                        <li>
+                          <a href="index.html#service2">Cloud Solution</a>
+                        </li>
+                        <li>
+                          <a href="index.html#service3">Security Solutions</a>
+                        </li>
+                        <li>
+                          <a href="index.html#service4"
+                            >Digital Transformation</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="widget-link">
+                      <ul class="link">
+                        <li>
+                          <a href="index.html#service5"
+                            >Application Development</a
+                          >
+                        </li>
+                        <li>
+                          <a href="index.html#service6">Digital Marketing</a>
+                        </li>
+                        <li>
+                          <a href="index.html#service7">Workflow Automation</a>
+                        </li>
+                        <li>
+                          <a href="index.html#service8"
+                            >IT Consulting & Solutions Partner</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Footer Widget End -->
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <!-- Footer Widget Start -->
+                <div class="footer-widget footer-widget-3 centering-footer">
+                  <h4 class="footer-widget-title">Other Link</h4>
+
+                  <div class="widget-link">
+                    <ul class="link">
+                      <li><a href="index.html#">Home </a></li>
+                      <li><a href="index.html#service">Our Services </a></li>
+                      <li><a href="index.html#about">Who we are</a></li>
+                      <li><a href="index.html#contact">Get in Touch </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Footer Widget End -->
+              </div>
+            </div>
+          </div>
+          <!-- Footer Widget Wrap End -->
+        </div>
+
+        <!-- Footer Copyright Start -->
+        <div class="footer-copyright-area">
+          <div class="container">
+            <div class="footer-copyright-wrap">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <!-- Footer Copyright Text Start -->
+                  <div class="copyright-text text-center">
+                    <p>
+                      © AIS Data Solution <span id="currentYear"></span>. All
+                      Rights Reserved. Developed by
+                      <a href="https://www.lintcloud.com" target="_blank"
+                        >LintCloud</a
+                      >
+                    </p>
+                  </div>
+                  <!-- Footer Copyright Text End -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright End -->
+      </div>
+      <!-- Footer Section End -->
+
+      <!-- back to top start -->
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+      <!-- back to top end -->
+    </div>
+    <div id="cookie-banner" class="cookie-banner hidden">
+      <div class="cookie-content">
+        <h2>🍪 Your Privacy Matters</h2>
+        <p>
+            We use cookies to optimise and personalise your browsing experience. Select <strong>“Accept”</strong> to permit all cookies, or select <strong>“Reject”</strong> to decline non-essential cookies and continue browsing with core functionality only.
+        </p>
+
+        <div class="cookie-buttons">
+          <button id="reject-btn" class="btn-outline">Reject</button>
+          <button id="accept-btn" class="btn-primary">Accept</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        const submitBtn = document.getElementById("submitBtn");
+        const snackbar = document.getElementById("snackbar");
+
+        // Snackbar function
+        function showSnackbar(message, type = "success") {
+          snackbar.textContent = message;
+          snackbar.className = `show ${type}`;
+          setTimeout(
+            () => (snackbar.className = snackbar.className.replace("show", "")),
+            3000
+          );
+        }
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          // Collect form data
+          const formData = new FormData(form);
+
+          // Show loading state
+          submitBtn.disabled = true;
+          const originalText = submitBtn.textContent;
+          submitBtn.textContent = "Sending...";
+
+          try {
+            const response = await fetch("form.php", {
+              method: "POST",
+              body: formData,
+            });
+
+            const result = await response.json();
+
+            if (result.status === "success") {
+              showSnackbar(
+                result.message || "Message sent successfully!",
+                "success"
+              );
+              form.reset();
+              const now = new Date();
+              now.setMinutes(now.getMinutes() - now.getTimezoneOffset()); // fix timezone for HTML
+
+              const datetimeInput =
+                document.getElementById("preferred_datetime");
+              datetimeInput.value = now.toISOString().slice(0, 16);
+              datetimeInput.min = now.toISOString().slice(0, 16); // ✅ Clear form on success
+            } else {
+              showSnackbar(
+                result.message || "Failed to send message!",
+                "error"
+              );
+            }
+          } catch (error) {
+            console.error(error);
+            showSnackbar("Something went wrong. Please try again!", "error");
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+          }
+        });
+      });
+    </script>
+    <script>
+      // Set default value and min time to NOW
+      const now = new Date();
+      now.setMinutes(now.getMinutes() - now.getTimezoneOffset()); // fix timezone for HTML
+
+      const datetimeInput = document.getElementById("preferred_datetime");
+      datetimeInput.value = now.toISOString().slice(0, 16);
+      datetimeInput.min = now.toISOString().slice(0, 16);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const banner = document.getElementById("cookie-banner");
+        const acceptBtn = document.getElementById("accept-btn");
+        const rejectBtn = document.getElementById("reject-btn");
+
+        // Check localStorage
+        const userChoice = localStorage.getItem("cookieConsent");
+
+        if (!userChoice) {
+          // Delay to avoid flashing
+          setTimeout(() => {
+            banner.classList.remove("hidden");
+            banner.classList.add("show");
+          }, 3000);
+        }
+
+        // Accept
+        acceptBtn.addEventListener("click", () => {
+          localStorage.setItem("cookieConsent", "accepted");
+          banner.classList.remove("show");
+          setTimeout(() => banner.classList.add("hidden"), 500);
+        });
+
+        // Reject
+        rejectBtn.addEventListener("click", () => {
+          localStorage.setItem("cookieConsent", "rejected");
+          banner.classList.remove("show");
+          setTimeout(() => banner.classList.add("hidden"), 500);
+        });
+      });
+    </script>
+
+    <!-- JS
+    ============================================ -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="https://thepixelcurve.com/html/sasmix/sasmix/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="https://thepixelcurve.com/html/sasmix/sasmix/assets/js/plugins/meanmenu.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="https://thepixelcurve.com/html/sasmix/sasmix/assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/back-to-top.js"></script>
+    <script src="assets/js/plugins/jquery.marquee.min.js"></script>
+    <script src="https://thepixelcurve.com/html/sasmix/sasmix/assets/js/plugins/splitting.js"></script>
+    <script src="assets/js/plugins/odometer.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script>
+      // Automatically set current year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
+    <script>
+      document.getElementById("user_timezone").value =
+        Intl.DateTimeFormat().resolvedOptions().timeZone;
+    </script>
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
