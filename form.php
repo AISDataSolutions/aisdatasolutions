@@ -52,16 +52,16 @@ $mail = new PHPMailer(true);
 try {
     // SMTP Configuration
     $mail->isSMTP();
-    $mail->Host       = 'smtp.zoho.com';
+    $mail->Host       = 'smtp.aisdatasolutions.ca'; // Update to your actual SMTP server if different
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'noreply@lintcloud.com';
-    $mail->Password   = 'L!ntCl0ud@77';
+    $mail->Username   = 'noreply@aisdatasolutions.ca'; // Update to your actual noreply address
+    $mail->Password   = 'YOUR_NEW_PASSWORD'; // Update with the correct password
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
 
     // From & To
-    $mail->setFrom('noreply@lintcloud.com', 'LintCloud');
-    $mail->addAddress('fayas@lintcloud.com');
+    $mail->setFrom('noreply@aisdatasolutions.ca', 'AIS Data Solutions');
+    $mail->addAddress('info@aisdatasolutions.ca'); // Update to your admin/recipient address
 
     // Email to Admin
     $mail->isHTML(true);
